@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Huynh - Eportfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("fXFi5QI0YgefuSRgB");
+})();
+</script>
+</head>
+<body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+        <nav>
+            <figure>
+                <div id="personal-logo" src="" alt=""></div>
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link" onclick="toggleModal(event)">
+                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About Me</a>
+                </li>
+                <li class="nav__link" onclick="toggleCareer(event)">
+                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Career Exploration</a>
+                </li>
+                <li class="nav__link " >
+                    <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
+                </li>
+                <li class="nav__link " >
+                    <a href="" onclick="toggleCareer(event)" target="_blank" class="nav__link--anchor link__hover-effect link__hover-effect--black">Resume</a>
+                </li>
+                <li class="nav__link" onclick="toggleModal(event)">
+                    <a href="#" class=" nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
+                </li>
+                <li class="nav__link click" onclick="toggleContrast()">
+                    <a href="#" class=" nav__link--anchor link__hover-effect link__hover-effect--black">
+                        <img id="dark-mode" class="img"= src="./assets/dark-mode.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hey</h1>
+                <h1 class="title purple">I'm Brandon</h1>
+                <p class="header__para">
+                    I'm an aspring<b class="purple"> software engineer</b> 
+                    <br>
+                    Here's a bit more <b class="purple click" onclick="toggleModal(event)">about me.</b>
+                    <br>
+                    And my  <b class="purple click" onclick="toggleCareer(event)">career exploration.</b>
+                </p>
+                <div class="social__list">
+                    <!-- <a class="social__link click" href="" target="_blank">
+                        <img class="img" src="./assets/linkedin.svg" alt="">
+                    </a> -->
+                    <a class="social__link click" href="https://github.com/HuynhBrandonC" target="_blank">
+                        <img class="img" src="./assets/github.svg" alt="">
+                    </a>
+                    <a class="social__link click" href="" onclick="toggleCareer(event)" target="_blank">
+                        <img class="img" src="./assets/resume.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <a href="">
+            <button class="mail__btn click" onclick="toggleModal(event)">
+                <img src="./assets/email.svg" class="img email--img" alt="">
+            </button>
+        </a>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click">
+
+            </div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">Dublin, California <br> huynhbrandon321@gmail.com <br>Software Engineer<br>Good communication skills, dedicated, hardworker, fast learner </h4>
+                <p class="modal__para">
+                    <img class="Img-Me" src="./assets/My_Picture.JPG" alt="">
+                    <br>
+                    <span class="indent">My</span> purpose is to use my experience to become a software engineer. I want to become a software engineer because the future is in technology. I am already taking software classes in order to hone my coding skills and excelling in math classes and trying to get better at writing so I can improve on all the basic skills you need to be a software engineer. Software engineering has always been interesting because technology is such a vast world that we still have not yet uncovered all of its secrets. When I become a software engineer, I hope to be my own boss one day and be able to not work under a company and instead work on projects that I want to work on.
+                    <br><span class="indent">I</span> have many skills that I feel will be useful to being a software engineer. During an argument I am always able to respect other peoples' opinions and not always hold mine above all of theirs because it is important to know that you are not always correct on everything and believe it or not there may be a better solution than the way you are doing it. Also, having to babysit my baby cousins a lot of the time I have learned to not get frustrated easily, no matter how tedious it is or how boring it is or how mad they can make me I always stay calm and am able to do whatever they want and not get easily frustrated. Another important thing is that I am always able to learn from mistakes and improve on myself.
+                    <br><span class="indent">Some</span> achievements I bring to the table are being 2 years ahead in my math class and learning coding for about 3 years, so I am starting young and have a lot more opportunity to grow even further. I also have other achievements like being in GATE and I have been in Honor Rolls for all of my years in middle school and high school. I also have taken AP classes to stay one step ahead of the competition and get college credits.Also, I am able to train other people, as I have been playing sports on teams and am able to help my teammates out, whether it be just motivation or being able to help them practice. Going through many years of school I have had a lot of tasks to do. What is important is that when I am set with a challenging task such as a project I am able to sit down and focus on that task and do it until it is done putting all my work into it. All of these skills that I possess will help me reach my dreams of becoming a software engineer.
+
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
+                        <span class="language__name">
+                            HTML
+                        </span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/CSS3_logo_and_wordmark.svg.png" alt="">
+                        <span class="language__name">
+                            CSS
+                        </span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/JavaScript-logo.png" alt="">
+                        <span class="language__name">
+                            JavaScript
+                        </span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/React-icon.svg.png" alt="">
+                        <span class="language__name">
+                            ReactJS
+                        </span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/1200px-Python-logo-notext.svg.png" alt="">
+                        <span class="language__name">
+                            Python
+                        </span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <img class="modal__exit click" src="./assets/xmark-solid.svg" alt="" onclick="toggleModal(event)">
+                <h3 class="modal__title modal__title--contact">
+                    Let's have a chat!
+                </h3>
+                <h3 class="modal__sub-title modal__sub-title--contact">
+                    I'm currently open to new opportunities. 
+                    <br> I'd love to hear from you.
+                </h3>
+                <form onsubmit="contact(event)" id="contact__form">
+                    <div class="form__item">
+                        <label class="form__item--label">Your Name</label>
+                        <input name="user_name" type="text" class="input" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Your Email</label>
+                        <input name="user_email" type="email" class="input" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Your Message</label>
+                        <textarea name="message" type="text" class="input" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">
+                        Send it my way
+                    </button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <img class="modal__overlay--spinner" src="./assets/spinner-solid.svg" alt="">
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking with you soon.
+                </div>
+            </div>
+        </div>
+        <div class="project1Shown">
+            <div class="project1__half project1__about">
+                <h3 class="project1__title project1__title--about">Entrepreneurship Project (AP CSP)
+                </h3>
+                <h3 class="project1__title project1__title--about">
+                    <br>HTML, CSS, JavaScript
+                </h3>
+                <p class="project1__para">
+                    <br>
+                    In this project, my team created a website that allows you to view different recipes that contain an ingredient and also recipes based on filters such as health needs. During this project, my team and I learned a lot about how to use working APIs and databases that we can include into our own projects that will help us solve real life problems. We also learned a lot about how to plan for a project and organizing the project, so that everyone has a role in the project and everybody is doing their own work efficiently in the project.
+                                
+                </p>
+            </div>
+            <div class="project1__half project1__contact">
+                <img class="project1__exit click" src="./assets/xmark-solid.svg" alt="" onclick="showProject1(event)">
+                <h3 class="project1__title project1__title--contact">
+                    Project Showcase:
+                </h3>
+                <figure class="project1__pic--wrapper">
+                    <a href="./assets/munchers.PNG" target="_blank"><img src="./assets/munchers.PNG" alt="" class="project1__pic"></a>
+                </figure>
+                <figure class="project1__pic--wrapper">
+                    <a href="./assets/MunchersShowcase.PNG" target="_blank"><img src="./assets/MunchersShowcase.PNG" alt="" class="project1__pic"></a>
+                </figure>
+                <h3 class="project1__sub-title project1__sub-title--contact">
+                    <a href="https://drive.google.com/drive/folders/1CsO16N2uAlmhnzbK0t8ehLJmLIv4-YaF?usp=sharing" target="_blank">Project Folder Link</a>
+                </h3>
+            </div>
+        </div>
+        <div class="project2Shown">
+            <div class="project2__half project2__about">
+                <h3 class="project2__title project2__title--about">
+                    chatbot project (AP CSA)
+                </h3>
+                <h3 class="project2__title project2__title--about">
+                    <br>
+                    
+                </h3>
+                <p class="project2__para">
+                    <br>
+                    In this project I worked in a team. This project highlights my ability to use Java and using algorithms to create predict possible inputs and creating a specified output.
+                </p>
+            </div>
+            <div class="project2__half project2__contact">
+                <img class="project2__exit click" src="./assets/xmark-solid.svg" alt="" onclick="showProject2(event)">
+                <h3 class="project2__title project2__title--contact">
+                    Project Showcase:
+                </h3>
+                <figure class="project2__pic--wrapper">
+                    <a href="./assets/chatbot1.png" target="_blank"><img src="./assets/chatbot1.png" alt="" class="project2__pic"></a>
+                </figure>
+                <!-- <figure class="project2__pic--wrapper">
+                    <a href="./assets/GmailShowcaseCompose.PNG" target="_blank"><img src="./assets/GmailShowcaseCompose.PNG" alt="" class="project2__pic"></a>
+                </figure> -->
+                <h3 class="project2__sub-title project2__sub-title--contact">
+                    <a href="https://github.com/huynh2117/nba-chatbot" target="_blank">GitHub Repo Link</a>
+                </h3>
+            </div>
+        </div>
+        <div class="careerShown">
+            <div class="career__half career__contact">
+                <img class="career__exit click" src="./assets/xmark-solid.svg" alt="" onclick="toggleCareer(event)">
+                <div class="career__left">
+                    <h3 class="career__title career__title--about">
+                        My Career Exploration
+                    </h3>
+                    <p class="career__para">
+                        <br>
+                        <span class="indent">During</span> my time in high school, I have explored many different career path options. The electives in my school allow you to learn schools that are specific to a certain career path. Some electives I have tried is cooking, art, and music. But, none of them have been as interesting to me as computer science. In my CSP class we did a job interest finder to see which jobs best matches you. On mine, my most matched job was a teacher and my second was a software engineer. The thought of teaching other people does sound interesting, but I think it would be something I'd do after I become a software engineer. <br>
+                        <span class="indent">I've</span> also always wanted to be a software engineer ever since I first started an hour of code during elementary school. I really fell in love with it and wanted to start learning about it as much as I could. I've gained a lot of experience over the course of 3 years of learning to code. I have gained a lot from my classes in school such as CSE and CSP, and I have also taken a lot of outside classes such as Youngwonks and also used free sources to learn more, such as, codecademy, freecodecamp, and scrimba. Because of all this, I am sure that software engineering is the right choice for me.
+                    </p>
+                </div>
+                <div class="career__right">
+                    <h3 class="career__title career__title--about">
+                        Resume:
+                    </h3>
+                    <a href="./assets/Resume.pdf" target="_blank">
+                        <img src="./assets/Resumepic.PNG" alt="" class="career__pic">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/semi circle.svg" class="shape shape--0">
+        <img src="./assets/circle.svg" class="shape shape--1">
+        <img src="./assets/squiggly.svg" class="shape shape--2">
+        <img src="./assets/circle.svg" class="shape shape--3">
+        <img src="./assets/triangle.svg" class="shape shape--4">
+        <img src="./assets/circle.svg" class="shape shape--5">
+        <img src="./assets/squiggly.svg" class="shape shape--6">
+        <img src="./assets/circle.svg" class="shape shape--7">
+        <img src="./assets/semi circle.svg" class="shape shape--8">
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="purple">projects</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project click" onclick="showProject1(event)">
+                        <div class="project__wrapper">
+                            <img src="./assets/munchers.PNG" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Entrepreneurship Project (AP CSP)
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                    In this project, my team created a website that allows you to view different recipes that contain an ingredient and also recipes based on filters such as health needs. During this project, my team and I learned a lot about how to use working APIs and databases that we can include into our own projects that will help us solve real life problems. We also learned a lot about how to plan for a project and organizing the project, so that everyone has a role in the project and everybody is doing their own work efficiently in the project.
+                                </p>
+                                <!-- <div class="project__description--links">
+                                    <a href="" class="project__description--link">
+                                        <a class="social__link click" href="https://github.com/HuynhBrandonC" target="_blank">
+                                            <img class="img" src="./assets/github.svg" alt="">
+                                        </a>
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project click" onclick="showProject2(event)">
+                        <div class="project__wrapper">
+                            <img src="./assets/chatbot2.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    chatbot (AP CSA)
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Java
+                                </h4>
+                                <p class="project__description--para">
+                                    In this project I worked in a team. This project highlights my ability to use Java and using algorithms to create predict possible inputs and creating a specified output.
+                                </p>
+                                <!-- <div class="project__description--links">
+                                    <a href="" class="project__description--link">
+                                        <a class="social__link click" href="https://github.com/HuynhBrandonC" target="_blank">
+                                            <img class="img" src="./assets/github.svg" alt="">
+                                        </a>
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container ">
+            <div class="row footer__row">
+                <figure class="flex">
+                    <img class="footer__logo--img" src="" alt="">
+                </figure>
+                <div class="footer__social--list">
+                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
+                        GitHub
+                    </a>
+                    <!-- <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
+                        LinkedIn
+                    </a> -->
+                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white" onclick="toggleModal(event)">
+                        Contact
+                    </a>
+                    <a href="" onclick="toggleCareer(event)" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+                        Resume
+                    </a>
+                </div>
+                <div class="footer__copyright">Copyright &#169 2022 </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
